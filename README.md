@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+# Svelte GitHub Website
 
-You can use the [editor on GitHub](https://github.com/micahguay/nuem.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a basic website built using (Svelte)[https://svelte.dev/] to show the website
+in (GitHub Pages)[https://pages.github.com/]. When visiting a page that isn't a
+preprogramed svelte page, it pulls in the markdown file
+for that page, runs it through a [Handlebars](https://handlebarsjs.com) processor, processes it into HTML 
+using [Showdown](https://github.com/showdownjs/showdown), and puts it into the site. Therefore, you
+compile your site once and just add new markdown files for the pages, posts, etc.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/micahguay/nuem.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
