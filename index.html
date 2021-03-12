@@ -1,21 +1,231 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset='utf-8'>
-  <meta name='viewport' content='width=device-width'>
-  <link rel='stylesheet' href='/css/bundle.css'>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/dracula.min.css">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
-  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>  
-  <script defer src='/js/bundle.js'></script>
-</head>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-  <script>
-    window.Handlebars = Handlebars;
-    window.moment = moment;
-  </script>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body {
+          padding: 0;
+          margin: 0;
+          overflow-x: hidden;
+          display: flex;
+          font-family: "Nanum Gothic";
+          color: #656565ff;
+        }
+
+        div {
+          margin: auto;
+        }
+
+        p {
+          font-size: 2.5vw;
+        }
+
+        .container {
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+        }
+
+        .row {
+          margin: 0;
+          width: 100vw;
+          padding-top: 3%;
+          height: 47vw;
+        }
+
+        .CenterCol {
+          margin: auto;
+        }
+
+        .WhiteRow {
+          background-color: white;
+        }
+
+        .GrayRow {
+          background-color: #d1d1d1ff;
+        }
+
+        .GreenRow {
+          background-color: #c3ead7ff;
+        }
+
+        .NuemTitle {
+          width: 100%;
+          height: fit-content;
+          text-align: center;
+          font-size: 18vw;
+          margin: auto;
+          color: #656565ff;
+        }
+
+        h2 {
+          font-size: 4vw;
+          color: #656565ff;
+        }
+
+        .table {
+            position: absolute;
+            z-index: 2;
+            width: 40vw;
+            height: 45vw;
+            top: 55vw;
+            left: 0;
+        }
+
+        .phone {
+          width: 40%;
+          height: 90%;
+          margin-left: 20%;
+          margin-top: -10%;
+        }
+
+        .truck {
+          width: 100%;
+          height: 90%;
+          margin-left: -5%;
+        }
+
+        .NuemTitle {
+          width: 15vw;
+          height: 7vw;
+          margin: 2%;
+          margin-top: 0;
+          top:0;
+          left: 0;
+          position: absolute;
+          z-index: 2;
+        }
+
+        .SloganText {
+          text-align: center;
+        }
+
+        .SignUpText {
+           text-align: center;
+          font-size: 5vw;
+        }
+
+        .ContactButton {
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 2%;
+          margin-top: 1vw;
+          font-size: 3vw;
+          background-color: white;
+        }
+
+        .ContactButton:Hover {
+          color: #c3ead7ff;
+          background-color: white;
+          cursor: pointer;
+        }
+
+        .SignupButton {
+          margin: auto;
+          margin-top: 0;
+          font-size: 3vw;
+          height: fit-content;
+          width: fit-content;
+        }
+
+        .BetterMenuParagraph {
+          width: 50%;
+          margin-left: 45%;
+        }
+
+        .CreateMenuHeading {
+           margin-top: 7%;
+        }
+
+        .CreateMenuParagraph {
+          width: 90%;
+          margin-left: 10%;
+        }
+
+        @media (max-width: 800px)
+        {
+
+          h2 {
+            font-size: 6vw;
+          }
+
+          p {
+            font-size: 4vw;
+          }
+
+          .row {
+            height: 70vw;
+          }
+
+          .table {
+            top: 82vw;
+          }
+
+          .ContactButton {
+            margin-top: 2vw;
+          }
+        }
+    </style>
+    <title>Nuem</title>
+    <link rel="shortcut icon" href="Images/NuemLogo.png" />
+  </head>
+  <body>
+ 
+    <image class="NuemTitle" src="Images/NuemName.png"/>
+    <image class="table" src="Images/TableNuem.png"/>
+    <div class="ContactButton" onclick="window.open('mailto:nuemdevelopment@gmail.com');">Contact</div>
+
+    <div class="container">
+      <div class="row WhiteRow">
+        <h2 class="CenterCol SloganText">reimagining the menu</h2>
+      </div>
+
+      <div class="row GrayRow">
+        <h2 class="BetterMenuParagraph">a better menu</h2>
+        <p class="BetterMenuParagraph" style="margin-top: -3%;">Nuem allows your customers to browse your menu, place their orders, and pay using their phones.</p>
+      </div>
+
+      <div class="row WhiteRow">
+        <div class="col">
+          <h2 class="CreateMenuParagraph CreateMenuHeading">easily create custom menus</h2>
+          <p class="CreateMenuParagraph" style="margin-top: 12%;">Nuem allows you to create a menu just as easy as posting on Instagram, then unleash your creativity organizing every menu item into unique categories.</p>
+        </div>
+        <div class="col-4 CenterCol">
+          <image class="phone" src="Images/PhoneWithNuem.png"/>
+        </div>
+      </div>
+
+      <div class="row GreenRow">
+        <div class="col">
+          <h2 class="CreateMenuParagraph">access through qr codes</h2>
+          <p class="CreateMenuParagraph" style="margin-top: 12%;">Nuem allows your customer to access your interactive menu through custom generated qr codes at every table or on the side of your food truck.</p>
+        </div>
+        <div class="col-4 CenterCol">
+          <image class="truck" src="Images/FoodTruckNuem.png"/>
+        </div>
+      </div>
+
+      <div class="row WhiteRow">
+        <h2 class="CenterCol SignUpText">sign up to become a beta tester</h2>
+         <button class="btn btn-outline-success SignupButton" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf97AFBr4t4HAWohXUmom90ncFTm6fhj9ZWhS6qpgeZIvwgeQ/viewform?embedded=true&fbclid=IwAR3mooh-g_u5RzAD_J3GmOFMECzKdw9p39S4S0dFR4Ghgs-OFIzxqnQKYik', '_blank');">Sign Up</button>
+      </div>
+    </div>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
 </html>
